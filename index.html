@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PacketVerse</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1><span class="dot"></span>PacketVerse</h1>
+<input id="search" type="search" placeholder="Search levels" aria-label="Search levels">
+<div class="bar" title="Overall progress"><div id="prog"></div></div><span id="pct"></span><span id="streak" class="chip"></span>
+<label class="tog"><input type="checkbox" id="ana"> Analogy</label><label class="tog"><input type="checkbox" id="unl"> Unlock all</label>
+<button id="home">Level map</button><button id="urlbtn" class="cta" style="width:auto;margin:0;padding:7px 12px!important;font-size:13px">Explore a URL</button><button id="appearance" title="Change appearance" aria-label="Change appearance">Appearance</button><button id="gear" aria-label="AI settings" title="AI settings">&#9881;</button></header>
+<aside id="map"></aside>
+<main><div id="topbar"><div><small id="lvno"></small><h2 id="ttl"></h2></div><div class="steps" id="phase"></div><span id="stepno" class="chip"></span></div>
+<div id="tools"></div><div id="stage"></div><div id="sd"></div><div id="legend"></div></main>
+<section id="panel"><p id="goal"></p><section id="definition"><h2>Definition</h2><p id="def"></p></section><h2>What's happening</h2><p id="exp"></p><h2>Why it matters</h2><p id="why"></p>
+<div id="pq"></div><div id="myth"></div><div id="whys"></div>
+<details id="ai" open><summary>AI Tutor <span class="ai">AI</span></summary><span id="ctxchip"></span><div id="chat"></div>
+<div class="sugg"><button data-ask="Why did this happen?">Why did this happen?</button><button data-ask="What happens next?">What happens next?</button></div>
+<div class="row"><input id="qin" placeholder="Ask about this step" aria-label="Ask the tutor"><button id="send">Send</button></div>
+<div class="row"><input id="win" placeholder="What if the second packet is lost?" aria-label="What if"><button id="wbtn">What if?</button></div><small id="wmsg" class="hint"></small></details>
+<div id="quiz"></div></section>
+<footer><div class="ctl"><button id="back">Back</button><button id="play">Play</button><button id="next">Next</button><button id="reset">Reset</button>
+<label>Speed <input type="range" id="speed" min="0.5" max="3" step="0.25" value="1"></label></div><div id="dots"></div></footer>
+<div id="homev" hidden></div>
+<dialog id="set"><h3>AI settings <span class="ai">AI</span></h3>
+<label>API key<input id="k" type="password" autocomplete="off"></label><label>Endpoint<input id="ep"></label><label>Model<input id="md"></label>
+<p id="tst" class="hint"></p><div class="row"><button id="tbtn">Test connection</button><button id="sbtn" class="cta" style="width:auto;margin:0">Save</button><button id="cbtn">Close</button></div></dialog>
+<dialog id="appearanceDialog" class="appearance-dialog"><div class="appearance-head"><div><small>PERSONALIZE</small><h2>Appearance</h2></div><button id="appearanceClose" aria-label="Close appearance settings">×</button></div><p>Choose a palette or adjust the colors used across the learning site.</p><label class="preset-label">Palette<select id="themePreset"><option value="sage">Soft sage</option><option value="paper">Warm paper</option><option value="blue">Blue grey</option><option value="night">Night</option></select></label><div class="color-grid"><label>Page background<input type="color" id="themeBg"></label><label>Panels<input type="color" id="themePanel"></label><label>Sidebar<input type="color" id="themeSide"></label><label>Accent<input type="color" id="themeAccent"></label><label>Text<input type="color" id="themeText"></label></div><div class="appearance-actions"><button id="themeReset">Reset to default</button><button id="themeDone" class="cta">Done</button></div></dialog><script src="engine.js"></script><script src="levels.js"></script><script src="widgets.js"></script><script src="ai.js"></script><script src="app.js"></script></body></html>
